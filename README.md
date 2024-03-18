@@ -92,6 +92,14 @@ composer install
 
   <tr style="padding: 0">
     <td valign="top">
+        Déplacement des pages d'index php à la racine dans un répertoire `public`
+    </td>
+    <td valign="top">
+    </td>
+  </tr>
+
+  <tr style="padding: 0">
+    <td valign="top">
         Mise en place de tests unitaires
     </td>
     <td valign="top">
