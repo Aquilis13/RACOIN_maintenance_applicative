@@ -8,6 +8,9 @@ Racoin est une application Web en PHP dédiée aux annonces. Il permet au partic
 1. Copier le fichier .env.exemple sous le nom .env
 
 2. Créer et configurer le fichier config.ini dans le dossier config
+``` bash
+cp config/exemple-config.ini config/config.ini
+```
 
 3. Lancer les commandes suivantes :
 ``` bash
@@ -17,6 +20,9 @@ docker compose up
 ```
 ### Sans docker 
 1. Créer et configurer le fichier config.ini dans le dossier config
+``` bash
+cp config/exemple-config.ini config/config.ini
+```
 
 2. Lancer la commande suivante :
 ``` bash
@@ -54,6 +60,7 @@ composer install
         Ajout d'un model de config.ini
     </td>
     <td valign="top">
+        ✔
     </td>
   </tr>
   
