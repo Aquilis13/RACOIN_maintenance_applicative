@@ -43,6 +43,7 @@ composer install
 - **[img](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/img)** : images de l'application
 - **[js](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/js)** : fichier de code JavaScript
 - **[model](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/model)** : model de l'application
+- **[sql](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/sql)** : Fichier SQL pour la création de la base de données
 - **[scss](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/scss)** : feuilles de style Sass
 - **[stylesheets](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/stylesheets)** : feuilles de style CSS
 - **[template](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/template)** : vue twig
@@ -77,6 +78,7 @@ composer install
         Regroupement des fichiers SQL qui sont à la racine du projet
     </td>
     <td valign="top">
+        ✔
     </td>
   </tr>
 
