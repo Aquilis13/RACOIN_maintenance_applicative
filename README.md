@@ -95,6 +95,7 @@ composer install
         Déplacement des pages d'index php à la racine dans un répertoire `public`
     </td>
     <td valign="top">
+      ✔
     </td>
   </tr>
 

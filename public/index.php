@@ -1,5 +1,5 @@
 <?php
-require 'vendor/autoload.php';
+require '../vendor/autoload.php';
 use db\connection;
 
 use Slim\Extras\Middleware\CsrfGuard;
@@ -33,7 +33,7 @@ if (!isset($_SESSION['token'])) {
 
 //$app->add(new CsrfGuard());
 
-$loader = new Twig_Loader_Filesystem('template');
+$loader = new Twig_Loader_Filesystem('../template');
 $twig = new Twig_Environment($loader);
 
 $menu = array(
