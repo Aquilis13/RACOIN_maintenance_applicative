@@ -113,6 +113,7 @@ composer install
       3/10
     </td>
     <td valign="top">
+      ✔
     </td>
   </tr>
 
