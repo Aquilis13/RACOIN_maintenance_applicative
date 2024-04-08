@@ -157,6 +157,7 @@ composer install
       9/10
     </td>
     <td valign="top">
+     ✔
     </td>
   </tr>
 
