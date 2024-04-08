@@ -44,8 +44,8 @@ if (!isset($_SESSION['token'])) {
 
 //$app->add(new CsrfGuard());
 
-$loader = new Twig_Loader_Filesystem('../template');
-$twig = new Twig_Environment($loader);
+$loader = new \Twig\Loader\FilesystemLoader('../template');
+$twig = new \Twig\Environment($loader);
 
 $menu = array(
     array('href' => "./index.php",
