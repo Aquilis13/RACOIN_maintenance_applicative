@@ -5,7 +5,7 @@
         "slim/http": "1.*",
         "php-di/php-di": "^6.1",
         "twig/twig": "~3.8",
-        "illuminate/database": "4.2.9"
+        "illuminate/database": "v11.1.*"
     },
     "autoload":{
         "psr-0":{

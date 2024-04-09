@@ -10,6 +10,7 @@ use model\Annonceur;
 class getCategorie {
 
     protected $categories = array();
+    private $annonce;
 
     public function getCategories() {
         return Categorie::orderBy('nom_categorie')->get()->toArray();

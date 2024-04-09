@@ -105,7 +105,7 @@ $app->post('/item/{id}/edit', function ($request, $response) use ($twig, $app, $
 
     $allPostVars = $request->getParsedBody();
     $item= new \controller\item();
-    $item->modifyPost($twig,$menu,$chemin, $id, $allPostVars, $cat->getCategories(), $dpt->getAllDepartments());
+    $item->modifyPost($twig,$menu,$chemin, $id, $cat->getCategories(), $dpt->getAllDepartments());
 
     return $response->withStatus(200);
 });
@@ -115,7 +115,7 @@ $app->map(['GET', 'POST'], '/item/{id}/confirm', function ($request, $response) 
 
     $allPostVars = $request->getParsedBody();
     $item = new \controller\item();
-    $item->edit($twig,$menu,$chemin, $id, $allPostVars);
+    $item->edit($twig,$menu,$chemin, $allPostVars, $id);
 
     return $response->withStatus(200);
 })->setName('confirm');
@@ -219,7 +219,7 @@ $app->get('/api/annonces[/]', function ($request, $response) use ($app) {
         $ann->links = $links;
     }
     $links["self"]["href"] = "/api/annonces/";
-    $a->links = $links;
+
     $response->getBody()->write($a->toJson());
 
     return $response->withHeader('Content-Type', 'application/json');
@@ -256,7 +256,7 @@ $app->get('/api/categories[/]', function ($request, $response) use ($app) {
         $cat->links = $links;
     }
     $links["self"]["href"] = "/api/categories/";
-    $c->links = $links;
+    
     $response->getBody()->write($c->toJson());
 
     return $response->withHeader('Content-Type', 'application/json');

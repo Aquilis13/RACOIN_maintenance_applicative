@@ -8,6 +8,13 @@ use model\Photo;
 use model\Categorie;
 
 class item {
+    private $annonce;
+    private $annonceur;
+    private $departement;
+    private $photo;
+    private $dptItem;
+    private $categItem;
+
     public function __construct(){
     }
     function afficherItem($twig, $menu, $chemin, $n, $cat) {
@@ -185,12 +192,11 @@ class item {
                     "errors" => $errors)
             );
         }
-        // sinon on ajoute à la base et on redirige vers une page de succès
+        // // sinon on ajoute à la base et on redirige vers une page de succès
         else{
             $this->annonce = Annonce::find($id);
             $idannonceur = $this->annonce->id_annonceur;
             $this->annonceur = Annonceur::find($idannonceur);
-
 
             $this->annonceur->email = htmlentities($allPostVars['email']);
             $this->annonceur->nom_annonceur = htmlentities($allPostVars['nom']);
@@ -198,7 +204,9 @@ class item {
             $this->annonce->ville = htmlentities($allPostVars['ville']);
             $this->annonce->id_departement = $allPostVars['departement'];
             $this->annonce->prix = htmlentities($allPostVars['price']);
-            $this->annonce->mdp = password_hash ($allPostVars['psw'], PASSWORD_DEFAULT);
+            if(isset($allPostVars['psw']) && !empty($allPostVars['psw'])){
+                $this->annonce->mdp = password_hash ($allPostVars['psw'], PASSWORD_DEFAULT);
+            }
             $this->annonce->titre = htmlentities($allPostVars['title']);
             $this->annonce->description = htmlentities($allPostVars['description']);
             $this->annonce->id_categorie = $allPostVars['categorie'];
