@@ -143,6 +143,7 @@ composer install
       7/10
     </td>
     <td valign="top">
+      ✔
     </td>
   </tr>
 
