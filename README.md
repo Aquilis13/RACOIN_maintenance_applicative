@@ -1,3 +1,7 @@
+## Nom
+
+`CHANOT Flora`
+
 # Racoin
 
 ## À propos du projet
@@ -30,22 +34,23 @@ composer install
 ```
 
 ## Technologies utilisées
-- PHP >=5.4.0 & <= 7.4
+- PHP >=8.2
 - Composer
-- Slim 2.x
-- Twig 1.0
-- Eloquent 4.2.9
+- Slim 4.x
+- Twig 3.8
+- Eloquent 11.1.x
 
 ## Structure du projet
 - **[config](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/config)** : emplacement des fichiers de configuration
 - **[controller](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/controller)** : controller de l'application
 - **[db](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/db)** : classe de connexion à la base de données
-- **[img](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/img)** : images de l'application
-- **[js](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/js)** : fichier de code JavaScript
+- **[public/img](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/img)** : images de l'application
+- **[public/js](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/js)** : fichier de code JavaScript
 - **[model](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/model)** : model de l'application
+- **[public](https://github.com/Aquilis13/RACOIN_maintenance_applicative/tree/main/public)** : Fichier d'index + font/image/js/css
 - **[sql](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/sql)** : Fichier SQL pour la création de la base de données
 - **[scss](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/scss)** : feuilles de style Sass
-- **[stylesheets](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/stylesheets)** : feuilles de style CSS
+- **[public/stylesheets](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/stylesheets)** : feuilles de style CSS
 - **[template](https://github.com/Aquilis13/racoin--maintenance_applicative-/tree/main/template)** : vue twig
 
 ## Améliorations éventuelles 
@@ -84,6 +89,7 @@ composer install
       9/10
     </td>
     <td valign="top">
+      ✔
     </td>
   </tr>
 
@@ -143,7 +149,6 @@ composer install
       7/10
     </td>
     <td valign="top">
-      ✔
     </td>
   </tr>
 
